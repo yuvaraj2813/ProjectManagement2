@@ -26,7 +26,7 @@ public class UserService {
         user.setUsername(req.getUsername());
         user.setEmail(req.getEmail());
         user.setPassword(passwordEncoder.encode((req.getPassword())));
-        user.setGlobalRole("User");
+        user.setGlobalRole("USER");
         userRepository.save(user);
     }
 
