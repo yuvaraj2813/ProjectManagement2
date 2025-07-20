@@ -16,6 +16,13 @@ public class Task {
 
     private String title;
 
+    private String description;
+
+    private LocalDate deadline;
+
+
+
+
     public Long getId() {
         return id;
     }
@@ -56,9 +63,7 @@ public class Task {
         this.deadline = deadline;
     }
 
-    private String description;
 
-    private LocalDate deadline;
 
 
 }
