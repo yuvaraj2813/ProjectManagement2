@@ -1,6 +1,6 @@
 package com.example.Project_Management.controller;
 
-import com.example.Project_Management.Util.JwtUtil;
+
 import com.example.Project_Management.dto.LoginRequest;
 import com.example.Project_Management.dto.RegisterRequest;
 import com.example.Project_Management.service.UserService;
@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
+
     @Autowired
     private UserService userService;
 
