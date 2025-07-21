@@ -13,6 +13,12 @@ public class ProjectMembership {
     @JoinColumn(name = "user_id")
     private User user_id;
 
+    @ManyToOne
+    @JoinColumn(name="project_id")
+    private  Project project_id;
+
+    private String role;
+
     public Project getProject_id() {
         return project_id;
     }
@@ -45,9 +51,5 @@ public class ProjectMembership {
         this.id = id;
     }
 
-    @ManyToOne
-    @JoinColumn(name="project_id")
-    private  Project project_id;
 
-    private String role;
 }
